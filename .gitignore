@@ -1,6 +1,4 @@
-# ignore ALL .log files
-*.log
+.gitignore
 package-lock.json
-
-# ignore ALL files in ANY directory named temp
 node_modules/
+.vscode/
