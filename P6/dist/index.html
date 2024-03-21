@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="bg-white h-screen mt-10">
+        <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900">Contact Us</h2>
+            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, deleniti, eligendi ut veritatis nostrum doloribus perspiciatis obcaecati libero eum officiis dicta non accusamus fugiat cumque mollitia. Saepe totam delectus corrupti?</p>
+            <form id="form" action="https://api.web3forms.com/submit" method="POST" class="space-y-8">
+                <!-- Validation -->
+                <input type="hidden" name="access_key" value="6faa22e8-2876-43df-9390-3eac38b4d139">
+                <input type="hidden" name="subject" value="New Submission from Your website">
+                <div class="">
+                    <label for="subject" class="block mb-2 text-sm font-medium text-gray-900">Subject</label>
+                    <input type="text" name="" id="subject" placeholder="Let us know how we can help you" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500  focus:border-blue-500 block w-full p-2.5" required>
+                </div>
+                <div class="">
+                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                    <input type="email" name="" id="email" placeholder="name@email.com" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500  focus:border-blue-500 block w-full p-2.5" required>
+                </div>
+
+                <div class="sm:col-span2">
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your message</label>
+                    <textarea name="message" id="message" cols="30" rows="6" placeholder="Leave a comment" class="block p-2.5 w-full text-sm text-gray-900 rounded-lg shadow-sm border border-gray-300 focus:ring-blue-500 focus:border-bluue500"></textarea>
+                </div>
+                <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300">Send a message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
