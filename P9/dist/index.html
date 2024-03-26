@@ -3,17 +3,24 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <link rel="stylesheet" href="./output.css" />
         <script src="./index.js"></script>
         <title>My Portfolio</title>
     </head>
     <body id="toggleDark" class="">
-        <nav class="2xl:container 2xl:mx-auto md:py-5 lg:px-20 md:px-6 p-4 fixed left-0 right-0 bg-gray-100 w-screen">
+        <nav
+            class="2xl:container 2xl:mx-auto md:py-5 lg:px-20 md:px-6 p-4 fixed left-0 right-0 bg-gray-100 w-screen"
+        >
             <div class="flex items-center justify-between">
                 <div class="lg:w-3/12">
-                    <div class="w-52 hidden lg:flex items-center space-x-3 border-b border-gray-200 pb-2">
+                    <div
+                        class="w-52 hidden lg:flex items-center space-x-3 border-b border-gray-200 pb-2"
+                    >
                         <div class="w-5">
                             <ion-icon name="search" class="text-xl"></ion-icon>
                             <img
@@ -107,22 +114,26 @@
                     </div>
                 </div>
                 <div class="lg:w-3/12 flex justify-end items-center space-x-4">
-                    <button
-                        onclick="openSmMenu()"
-                        aria-label="open menu"
-                        class="text-gray-800 dark:text-white md:hidden focus:outline-none focus:ring-2 focus:ring-gray-800 rounded hover:bg-gray-100 p-0.5"
-                    >
-                        <img
-                            class="dark:hidden"
-                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-VI-svg2.svg"
-                            alt="toggler"
-                        />
-                        <img
-                            class="dark:block hidden"
-                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/navigation-VI-svg2dark.svg"
-                            alt="toggler"
-                        />
-                    </button>
+                    <!-- Modal menu -->
+                    <a
+                        href="#!"
+                        class="focus:outline-none text-gray-800 focus:ring-2 focus:ring-gray-800 rounded-none hover:bg-gray-100 p-0.5"
+                        ><ion-icon
+                            name="log-in-outline"
+                            class="text-2xl"
+                            onclick="modalHandlerLogin(`#modalLogin`)"
+                        ></ion-icon
+                    ></a>
+                    <!-- Cart -->
+                    <a
+                        href="#!"
+                        class="focus:outline-none text-gray-800 focus:ring-2 focus:ring-gray-800 rounded-none hover:bg-gray-100 p-0.5"
+                        ><ion-icon
+                            name="cart-outline"
+                            class="text-2xl"
+                            onclick="modalHandlerCart(`#modalCart`)"
+                        ></ion-icon
+                    ></a>
                 </div>
             </div>
 
@@ -131,7 +142,9 @@
                 class="hidden lg:hidden absolute z-10 inset-0 h-screen w-full dark:bg-gray-800 bg-gray-800 bg-opacity-70 dark:bg-opacity-70"
             >
                 <div class="relative w-full h-screen">
-                    <div class="absolute inset-0 w-1/2 bg-white dark:bg-gray-900 p-6 justify-center">
+                    <div
+                        class="absolute inset-0 w-1/2 bg-white dark:bg-gray-900 p-6 justify-center"
+                    >
                         <div
                             class="flex items-center justify-between border-b pb-4 border-gray-200 dark:border-gray-700"
                         >
@@ -220,7 +233,9 @@
                 class="hidden md:hidden absolute inset-0 z-10 flex flex-col w-full h-screen bg-white dark:bg-gray-900 pt-4"
             >
                 <div class="w-full">
-                    <div class="flex items-center justify-between border-b border-gray-200 pb-3 mx-4">
+                    <div
+                        class="flex items-center justify-between border-b border-gray-200 pb-3 mx-4"
+                    >
                         <div class="flex items-center space-x-3 mx-2">
                             <div>
                                 <img
@@ -329,7 +344,9 @@
                 class="hidden md:hidden absolute inset-0 z-10 flex flex-col w-full h-screen bg-white pt-4"
             >
                 <div class="w-full">
-                    <div class="flex items-center justify-between border-b border-gray-200 pb-4 mx-4">
+                    <div
+                        class="flex items-center justify-between border-b border-gray-200 pb-4 mx-4"
+                    >
                         <div></div>
                         <div><p class="text-base font-semibold text-gray-800">Menu</p></div>
                         <button
@@ -397,12 +414,14 @@
             <div class="container mx-auto flex flex-col items-center py-12 pt-48">
                 <header class="w-11/12 flex flex-col justify-center items-center mb-5">
                     <h1 class="text-3xl text-center text-gray-800 font-black leading-9">
-                        Shop without leaving the <span class="text-blue-700">Comforts</span> of your home
+                        Shop without leaving the <span class="text-blue-700">Comforts</span> of your
+                        home
                     </h1>
                     <p class="mt-5 text-gray-900 text-center text-sm font-normal w-10/12">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur dolorem quos cum est
-                        voluptatum temporibus, quis autem perferendis cupiditate nihil corporis voluptas, corrupti sint.
-                        Totam sapiente provident perferendis nulla nobis?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur
+                        dolorem quos cum est voluptatum temporibus, quis autem perferendis
+                        cupiditate nihil corporis voluptas, corrupti sint. Totam sapiente provident
+                        perferendis nulla nobis?
                     </p>
                 </header>
                 <div class="flex justify-center items-center">
@@ -414,22 +433,370 @@
                 </div>
             </div>
         </main>
+        <section class="py-8 px-4 md:px-6 md:py-12 lg:px-20">
+            <div class="flex items-center justify-between">
+                <div class="lg:w-1/3">
+                    <h1 class="text-4xl font-semibold leading-9 text-gray-800">Indor Interiors</h1>
+                    <p class="text-base leading-6 mt-4 text-gray-600">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+                        numquam fugiat nostrum vero sapiente voluptatum, mollitia magni, illo
+                        adipisci iure praesentium! Porro aliquam sapiente ipsam. Voluptatem adipisci
+                        delectus nisi natus?
+                    </p>
+                    <button
+                        class="mt-6 text-base font-semibold leading-none text-gray-800 flex items-center"
+                        type="button"
+                    >
+                        View catalogue
+                    </button>
+                    <img
+                        class="ml-2 mt-1"
+                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/feature-VI-svg1.svg"
+                        alt=""
+                    />
+                </div>
+                <div class="mt-8">
+                    <div class="w-full h-full bg-red-200">
+                        <img
+                            src="https://i.ibb.co/cbyDY74/pexels-max-vakhtbovych-6782351-1-1.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="grid gap-6 mt-4 grid-cols-2">
+                        <img
+                            src="https://i.ibb.co/0Jv3FSy/pexels-max-vakhtbovych-6436799-1-1.png"
+                            alt=""
+                        />
+                        <img
+                            src="https://i.ibb.co/4Jrp5TB/pexels-max-vakhtbovych-6782370-1.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="2xl:container 2xl:mx-auto">
+            <div class="lg:px-20 md:px-6 px-4 md:py-12 py-8">
+                <div>
+                    <h1
+                        class="text-3xl lg:text-4xl font-semibold text-gray-800 dark:text-white text-center dark:text-gray-50"
+                    >
+                        Top Selling
+                    </h1>
+                </div>
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-8 md:mt-10"
+                >
+                    <div class="bg-gray-50 dark:bg-gray-800 p-8">
+                        <div class="">
+                            <h2 class="text-xl text-gray-600 dark:text-white">Lounge Chair</h2>
+                            <p class="text-xl font-semibold text-gray-800 dark:text-white mt-2">
+                                $1200
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center mt-8 md:mt-24">
+                            <img
+                                class=""
+                                src="https://i.ibb.co/8403ZFZ/pexels-hormel-2762247-removebg-preview-2-1.png"
+                                alt="A chair with designed back"
+                                role="img"
+                            />
+                        </div>
+                        <div class="flex justify-end items-center space-x-2 mt-16 md:mt-32">
+                            <button
+                                aria-label="show in red color"
+                                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+                            >
+                                <div
+                                    class="w-2.5 h-2.5 bg-red-600 border rounded-full border-gray-500"
+                                ></div>
+                            </button>
+                            <button
+                                aria-label="show in white color"
+                                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+                            >
+                                <div
+                                    class="w-2.5 h-2.5 bg-white border rounded-full border-gray-500"
+                                ></div>
+                            </button>
+                            <button
+                                aria-label="show in black color"
+                                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+                            >
+                                <div
+                                    class="w-2.5 h-2.5 bg-gray-900 border rounded-full border-gray-500"
+                                ></div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 dark:bg-gray-800 p-8">
+                        <div class="">
+                            <h2 class="text-xl text-gray-600 dark:text-white">Lounge Chair</h2>
+                            <p class="text-xl font-semibold text-gray-800 dark:text-white mt-2">
+                                $1200
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center mt-8 md:mt-24">
+                            <img
+                                class=""
+                                src="https://i.ibb.co/WBdnRqb/eugene-chystiakov-3ne-Swyntb-Q8-unsplash-1-removebg-preview-2-1.png"
+                                alt="A chair with wooden legs"
+                                role="img"
+                            />
+                        </div>
+                        <div class="flex justify-end items-center space-x-2 mt-8 md:mt-32">
+                            <button
+                                aria-label="show in white color"
+                                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+                            >
+                                <div
+                                    class="w-2.5 h-2.5 bg-white border rounded-full border-gray-500"
+                                ></div>
+                            </button>
+                            <button
+                                aria-label="show in black color"
+                                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+                            >
+                                <div
+                                    class="w-2.5 h-2.5 bg-gray-900 border rounded-full border-gray-500"
+                                ></div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 dark:bg-gray-800 p-8">
+                        <div class="">
+                            <h2 class="text-xl text-gray-600 dark:text-white">Lounge Chair</h2>
+                            <p class="text-xl font-semibold text-gray-800 dark:text-white mt-2">
+                                $1200
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center mt-8 md:mt-24">
+                            <img
+                                class=""
+                                src="https://i.ibb.co/R2fbCvj/kari-shea-It-Mgg-D0-Egu-Y-unsplash-removebg-preview-2-1.png"
+                                alt="A sofa chair with wooden legs"
+                                role="img"
+                            />
+                        </div>
+                        <div class="flex justify-end items-center space-x-2 mt-16 md:mt-32">
+                            <button
+                                aria-label="show in green color"
+                                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+                            >
+                                <div
+                                    class="w-2.5 h-2.5 bg-green-700 border rounded-full border-gray-500"
+                                ></div>
+                            </button>
+                            <button
+                                aria-label="show in brown color"
+                                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+                            >
+                                <div
+                                    class="w-2.5 h-2.5 bg-yellow-800 border rounded-full border-gray-500"
+                                ></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-6 lg:gap-8 mt-4 md:mt-6 lg:mt-8"
+                >
+                    <div class="bg-gray-50 dark:bg-gray-800 p-8">
+                        <div>
+                            <h2 class="text-xl leading-tight text-gray-600 dark:text-white">
+                                Sectional Sofa
+                            </h2>
+                            <p class="text-xl font-semibold text-gray-800 dark:text-white mt-2">
+                                $78900
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center mt-28 md:mt-3">
+                            <img
+                                src="https://i.ibb.co/CPdBFwZ/pexels-pixabay-276583-removebg-preview-1-1.png"
+                                alt="A large sectional sofa"
+                                role="img"
+                            />
+                        </div>
+                        <div class="flex justify-end items-center space-x-2 mt-36 md:mt-12">
+                            <button
+                                aria-label="show in yellow color"
+                                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+                            >
+                                <div
+                                    class="w-2.5 h-2.5 bg-yellow-500 border rounded-full border-gray-500"
+                                ></div>
+                            </button>
+                            <button
+                                aria-label="show in light gray color"
+                                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+                            >
+                                <div
+                                    class="w-2.5 h-2.5 bg-gray-400 border rounded-full border-gray-500"
+                                ></div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 dark:bg-gray-800 p-8">
+                        <div>
+                            <h2 class="text-xl leading-tight text-gray-600 dark:text-white">
+                                Two Seater Sofa
+                            </h2>
+                            <p class="text-xl font-semibold text-gray-800 dark:text-white mt-2">
+                                $2900
+                            </p>
+                        </div>
+                        <div class="flex justify-center items-center mt-28 md:mt-1">
+                            <img
+                                src="https://i.ibb.co/238nZzf/pexels-andrea-piacquadio-3757055-removebg-preview-1-1.png"
+                                alt="A beautiful two seater sofa"
+                                role="img"
+                            />
+                        </div>
+                        <div class="flex justify-end items-center space-x-2 mt-36 md:mt-12">
+                            <button
+                                aria-label="show in black color"
+                                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+                            >
+                                <div
+                                    class="w-2.5 h-2.5 bg-gray-900 border rounded-full border-gray-500"
+                                ></div>
+                            </button>
+                            <button
+                                aria-label="show in green color"
+                                class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-600 rounded"
+                            >
+                                <div
+                                    class="w-2.5 h-2.5 bg-green-700 border rounded-full border-gray-500"
+                                ></div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white">
+            <div
+                class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8"
+            >
+                <div>
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                        Technical Specifications
+                    </h2>
+                    <p class="mt-4 text-gray-500">
+                        The walnut wood card tray is precision milled to perfectly fit a stack of
+                        Focus cards. The powder coated steel divider separates active cards from new
+                        ones, or can be used to archive important task lists.
+                    </p>
+
+                    <dl
+                        class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8"
+                    >
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-gray-900">Origin</dt>
+                            <dd class="mt-2 text-sm text-gray-500">Designed by Good Goods, Inc.</dd>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-gray-900">Material</dt>
+                            <dd class="mt-2 text-sm text-gray-500">
+                                Solid walnut base with rare earth magnets and powder coated steel
+                                card cover
+                            </dd>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-gray-900">Dimensions</dt>
+                            <dd class="mt-2 text-sm text-gray-500">
+                                6.25&quot; x 3.55&quot; x 1.15&quot;
+                            </dd>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-gray-900">Finish</dt>
+                            <dd class="mt-2 text-sm text-gray-500">
+                                Hand sanded and finished with natural oil
+                            </dd>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-gray-900">Includes</dt>
+                            <dd class="mt-2 text-sm text-gray-500">
+                                Wood card tray and 3 refill packs
+                            </dd>
+                        </div>
+                        <div class="border-t border-gray-200 pt-4">
+                            <dt class="font-medium text-gray-900">Considerations</dt>
+                            <dd class="mt-2 text-sm text-gray-500">
+                                Made from natural materials. Grain and color vary with each item.
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+                <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+                    <img
+                        src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
+                        alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
+                        class="rounded-lg bg-gray-100"
+                    />
+                    <img
+                        src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
+                        alt="Top down view of walnut card tray with embedded magnets and card groove."
+                        class="rounded-lg bg-gray-100"
+                    />
+                    <img
+                        src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
+                        alt="Side of walnut card tray with card groove and recessed card area."
+                        class="rounded-lg bg-gray-100"
+                    />
+                    <img
+                        src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
+                        alt="Walnut card tray filled with cards and card angled in dedicated groove."
+                        class="rounded-lg bg-gray-100"
+                    />
+                </div>
+            </div>
+        </div>
+
         <!-- Footer section -->
         <footer class="bg-gray-200 px-4 py-12">
             <div class="flex flex-col items-center justify-center">
                 <h1 class="items-center ml-2 font-semibold text-xl">FURNATURE</h1>
             </div>
             <div class="flex items-center justify-center flex-wrap mt-8 gap-8">
-                <a href="#!" class="text-base cursor-pointer leading-4 text-gray-800 hover:text-gray-500"> Home </a>
-                <a href="#!" class="text-base cursor-pointer leading-4 text-gray-800 hover:text-gray-500"> Catalog </a>
-                <a href="#!" class="text-base cursor-pointer leading-4 text-gray-800 hover:text-gray-500"> Top Sell </a>
-                <a href="#!" class="text-base cursor-pointer leading-4 text-gray-800 hover:text-gray-500"> Blog </a>
-                <a href="#!" class="text-base cursor-pointer leading-4 text-gray-800 hover:text-gray-500">
+                <a
+                    href="#!"
+                    class="text-base cursor-pointer leading-4 text-gray-800 hover:text-gray-500"
+                >
+                    Home
+                </a>
+                <a
+                    href="#!"
+                    class="text-base cursor-pointer leading-4 text-gray-800 hover:text-gray-500"
+                >
+                    Catalog
+                </a>
+                <a
+                    href="#!"
+                    class="text-base cursor-pointer leading-4 text-gray-800 hover:text-gray-500"
+                >
+                    Top Sell
+                </a>
+                <a
+                    href="#!"
+                    class="text-base cursor-pointer leading-4 text-gray-800 hover:text-gray-500"
+                >
+                    Blog
+                </a>
+                <a
+                    href="#!"
+                    class="text-base cursor-pointer leading-4 text-gray-800 hover:text-gray-500"
+                >
                     Contact Us
                 </a>
             </div>
             <div class="flex items-center justify-center gap-x-8 mt-8">
-                <button class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 focus:outline-none rounded-full">
+                <button
+                    class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 focus:outline-none rounded-full"
+                >
                     <svg
                         aria-hidden="true"
                         focusable="false"
@@ -446,7 +813,9 @@
                         ></path>
                     </svg>
                 </button>
-                <button class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 focus:outline-none rounded-full">
+                <button
+                    class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 focus:outline-none rounded-full"
+                >
                     <svg
                         aria-hidden="true"
                         focusable="false"
@@ -463,7 +832,9 @@
                         ></path>
                     </svg>
                 </button>
-                <button class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 focus:outline-none rounded-full">
+                <button
+                    class="focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 focus:outline-none rounded-full"
+                >
                     <svg
                         aria-hidden="true"
                         focusable="false"
@@ -488,5 +859,357 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Modal Login -->
+        <div id="modalLogin" class="relative z-[100] hidden">
+            <!-- Overlay -->
+            <div
+                class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                onclick="removeModalLogin(`#modalLogin`)"
+            ></div>
+            <div
+                class="fixed left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] z-10 overflow-y-auto"
+            >
+                <div class="flex min-h-full items-center justify-center p-4 text-center">
+                    <div
+                        class="relative transform overflow-hidden rounded-lg bg-white shadow-xl transition-all"
+                    >
+                        <div class="bg-white px-4 pt-5 pb-4">
+                            <div class="flex flex-col items-center justify-center">
+                                <img
+                                    src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sign_in-svg1.svg"
+                                    alt="logo"
+                                />
+                                <div class="bg-white shadow rounded w-full">
+                                    <p
+                                        class="text-2xl font-extrabold leading-none text-gray-800 mt-4"
+                                        tabindex="0"
+                                    >
+                                        Login to your account
+                                    </p>
+                                    <p
+                                        class="text-sm font-medium leading-6 text-gray-500"
+                                        tabindex="0"
+                                    >
+                                        Dont have an account?
+                                        <a
+                                            class="hover:text-gray-500 text-sm font-medium leading-none text-gray-800 cursor-pointer"
+                                            href="#!"
+                                            >Sign up here</a
+                                        >
+                                    </p>
+                                    <button
+                                        class="px-4 border rounded-lg border-gray-700 flex items-center w-full mt-4"
+                                        type="button"
+                                    >
+                                        <img
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sign_in-svg2.svg"
+                                            alt=""
+                                        />
+                                        <p class="font-medium ml-4 text-base">
+                                            Continue with Google
+                                        </p>
+                                    </button>
+                                    <button
+                                        class="px-4 border rounded-lg border-gray-700 flex items-center w-full mt-4"
+                                        type="button"
+                                    >
+                                        <img
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sign_in-svg3.svg"
+                                            alt=""
+                                        />
+                                        <p class="font-medium ml-4 text-base">
+                                            Continue with Github
+                                        </p>
+                                    </button>
+                                    <button
+                                        class="px-4 border rounded-lg border-gray-700 flex items-center w-full mt-4"
+                                        type="button"
+                                    >
+                                        <img
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sign_in-svg4.svg"
+                                            alt=""
+                                        />
+                                        <p class="font-medium ml-4 text-base">
+                                            Continue with Twitter
+                                        </p>
+                                    </button>
+                                    <div class="w-full flex items-center justify-center py-5">
+                                        <hr class="w-full bg-gray-400" />
+                                        <p
+                                            class="text-base font-medium leading-4 px-2.5 text-gray-400"
+                                        >
+                                            OR
+                                        </p>
+                                        <hr class="w-full bg-gray-400" />
+                                    </div>
+                                    <div>
+                                        <input
+                                            class="w-full bg-gray-200 border rounded text-xs font-medium leading-none text-gray-800 py-3 pl-3 mt-2"
+                                            type="email"
+                                            name=""
+                                            id=""
+                                            placeholder="Email"
+                                        />
+                                        <div class="mt-6 w-full">
+                                            <div class="relative flex items-center justify-center">
+                                                <input
+                                                    class="w-full bg-gray-200 border rounded text-xs font-medium leading-none text-gray-800 py-3 pl-3 mt-1"
+                                                    id="password"
+                                                    type="password"
+                                                    placeholder="Password"
+                                                />
+                                                <div
+                                                    class="absolute right-0 mt-2 mr-3 cursor-pointer"
+                                                >
+                                                    <img
+                                                        src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sign_in-svg5.svg"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-8">
+                                            <button
+                                                class="text-white leading-none bg-indigo-700 border rounded w-full py-4 hover:bg-indigo-600"
+                                                type="button"
+                                            >
+                                                Login
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Cart -->
+        <div id="modalCart" class="relative z-[100] hidden">
+            <!-- Overlay -->
+            <div
+                class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+                onclick="removeModalCart(`#modalCart`)"
+            ></div>
+            <div class="fixed inset-0 z-10 overflow-y-auto">
+                <div class="flex min-h-full items-center justify-center p-4 text-center">
+                    <div
+                        id="check-div"
+                        class="w-full h-full bg-black bg-opacity-90 top-0 overflow-y-auto overflow-x-hidden fixed sticky-0"
+                    >
+                        <div
+                            class="w-full absolute z-10 right-0 h-full overflow-x-hidden transform translate-x-0 transition ease-in-out duration-700"
+                            id="check-out"
+                        >
+                            <div class="flex items-end justify-end lg:flex-row flex-col" id="cart">
+                                <div
+                                    class="px-4 py-4 bg-white overflow-y-hidden overflow-x-hidden h-auto lg:w-1/2 md:w-8/12 lg:px-8 lg:py-14 md:px-6 md:my-8"
+                                    id="scroll"
+                                >
+                                    <div
+                                        class="flex items-center text-gray-500 cursor-pointer"
+                                        onclick="checkoutback(`#modalCart`)"
+                                    >
+                                        <img
+                                            src="https://tuk-cdn.s3.amazonaws.com/can-uploader/shopping-cart-1-svg1.svg"
+                                            alt=""
+                                        />
+                                        <p class="text-sm pl-2 leading-none">Back</p>
+                                    </div>
+                                    <div
+                                        class="md:flex lg:py-8 md:py-10 items-stretch py-8 border-t border-gray-50"
+                                    >
+                                        <div class="md:w-4/12 2xl:w-1/4 w-full">
+                                            <img
+                                                class="h-full object-center object-cover"
+                                                src="https://i.ibb.co/yVSpYqx/Rectangle-6.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div
+                                            class="flex flex-col justify-center md:pl-3 md:w-8/12 2xl:w-3/4"
+                                        >
+                                            <p class="text-xs leading-3 text-gray-800 pt-4">
+                                                123ABC
+                                            </p>
+                                            <div
+                                                class="flex items-center justify-between w-full pt-1"
+                                            >
+                                                <p
+                                                    class="text-base font-black leading-none text-gray-800"
+                                                >
+                                                    AB sneakers
+                                                </p>
+                                                <select
+                                                    class="py-2 px-1 border border-gray-200 mr-6"
+                                                    name=""
+                                                    id=""
+                                                >
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                            <p class="text-xs leading-3 text-gray-600 pt-2">
+                                                Height: 10inches
+                                            </p>
+                                            <p class="text-xs leading-3 text-gray-600 pt-2">
+                                                Color: White
+                                            </p>
+                                            <p class="w-96 text-xs leading-3 text-gray-600 pt-2">
+                                                Coposition 100% calf leather
+                                            </p>
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex items-center">
+                                                    <p
+                                                        class="text-xs leading-3 underline text-gray-800 cursor-pointer"
+                                                    >
+                                                        Add to favorites
+                                                    </p>
+                                                    <p
+                                                        class="text-xs leading-3 pl-5 underline text-red-800 cursor-pointer"
+                                                    >
+                                                        Remove
+                                                    </p>
+                                                </div>
+                                                <p
+                                                    class="text-base font-black leading-none text-gray-800"
+                                                >
+                                                    $500
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="md:flex lg:py-8 md:py-10 items-stretch py-8 border-t border-gray-50"
+                                    >
+                                        <div class="md:w-4/12 2xl:w-1/4 w-full">
+                                            <img
+                                                class="h-full object-center object-cover"
+                                                src="https://i.ibb.co/yVSpYqx/Rectangle-6.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div
+                                            class="flex flex-col justify-center md:pl-3 md:w-8/12 2xl:w-3/4"
+                                        >
+                                            <p class="text-xs leading-3 text-gray-800 pt-4">
+                                                123ABC
+                                            </p>
+                                            <div
+                                                class="flex items-center justify-between w-full pt-1"
+                                            >
+                                                <p
+                                                    class="text-base font-black leading-none text-gray-800"
+                                                >
+                                                    AB sneakers
+                                                </p>
+                                                <select
+                                                    class="py-2 px-1 border border-gray-200 mr-6"
+                                                    name=""
+                                                    id=""
+                                                >
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                </select>
+                                            </div>
+                                            <p class="text-xs leading-3 text-gray-600 pt-2">
+                                                Height: 10inches
+                                            </p>
+                                            <p class="text-xs leading-3 text-gray-600 pt-2">
+                                                Color: White
+                                            </p>
+                                            <p class="w-96 text-xs leading-3 text-gray-600 pt-2">
+                                                Coposition 100% calf leather
+                                            </p>
+                                            <div class="flex items-center justify-between">
+                                                <div class="flex items-center">
+                                                    <p
+                                                        class="text-xs leading-3 underline text-gray-800 cursor-pointer"
+                                                    >
+                                                        Add to favorites
+                                                    </p>
+                                                    <p
+                                                        class="text-xs leading-3 pl-5 underline text-red-800 cursor-pointer"
+                                                    >
+                                                        Remove
+                                                    </p>
+                                                </div>
+                                                <p
+                                                    class="text-base font-black leading-none text-gray-800"
+                                                >
+                                                    $500
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="w-full bg-gray-100 h-full">
+                                        <div class="text-3xl font-black leading-9 text-gray-800">
+                                            Summary
+                                        </div>
+                                        <div class="flex items-center justify-between pt-16">
+                                            <p
+                                                class="text-base font-black leading-none text-gray-800"
+                                            >
+                                                Subtotal
+                                            </p>
+                                            <p
+                                                class="text-base font-black leading-none text-gray-800"
+                                            >
+                                                $1000
+                                            </p>
+                                        </div>
+                                        <div class="flex items-center justify-between pt-5">
+                                            <p
+                                                class="text-base font-black leading-none text-gray-800"
+                                            >
+                                                Shipping
+                                            </p>
+                                            <p
+                                                class="text-base font-black leading-none text-gray-800"
+                                            >
+                                                $20
+                                            </p>
+                                        </div>
+                                        <div class="flex items-center justify-between pt-5">
+                                            <p
+                                                class="text-base font-black leading-none text-gray-800"
+                                            >
+                                                Tax
+                                            </p>
+                                            <p
+                                                class="text-base font-black leading-none text-gray-800"
+                                            >
+                                                $30
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center pb-6 justify-between pt-20">
+                                        <p
+                                            class="text-2xl leading-normal text-right text-gray-800 font-bold"
+                                        >
+                                            Total
+                                        </p>
+                                        <p class="text-2xl font-bold text-right text-gray-800">
+                                            $1050
+                                        </p>
+                                    </div>
+                                    <button
+                                        type="button"
+                                        class="text-base text-white leading-none w-full bg-gray-800 py-5 rounded border-gray-800 border hover:bg-gray-700"
+                                    >
+                                        Check out
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
